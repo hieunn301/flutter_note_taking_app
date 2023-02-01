@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/noteController.dart';
 import 'package:flutter_note/screens/home/show_note.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
+import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
 class NoteList extends StatelessWidget {
   final AuthController authController = Get.find<AuthController>();
@@ -16,9 +17,9 @@ class NoteList extends StatelessWidget {
     Colors.lightGreen.shade300,
     Colors.lightBlue.shade300,
     Colors.orange.shade300,
-    Colors.pinkAccent.shade100,
+    // Colors.pinkAccent.shade100,
     Colors.tealAccent.shade100,
-    Colors.purpleAccent,
+    // Colors.purpleAccent,
     Colors.greenAccent.shade400,
     Colors.cyanAccent,
   ];

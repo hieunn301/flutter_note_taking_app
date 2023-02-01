@@ -7,6 +7,7 @@ import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
 import 'package:get/get.dart';
 
 class Setting extends StatelessWidget {
+  static String routeName = "/setting";
   final AuthController authController = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {

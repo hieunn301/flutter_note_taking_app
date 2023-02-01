@@ -11,23 +11,23 @@ class Themes {
         // foregroundColor: Colors.black,
         // backgroundColor: Colors.grey.shade300,
         ),
-    primaryColor: Colors.orange,
-    accentColor: Colors.tealAccent.shade700,
+    primaryColor: Colors.blue,
+    accentColor: Colors.blueAccent,
     buttonColor: Colors.black,
   );
 
   final dartTheme = ThemeData.dark().copyWith(
     colorScheme: ColorScheme.light(),
     backgroundColor: Colors.grey.shade800,
-    primaryColor: Colors.orange,
+    primaryColor: Colors.blue,
     buttonColor: Colors.white,
-    accentColor: Colors.tealAccent,
+    accentColor: Colors.blueAccent,
     iconTheme: IconThemeData(
       color: Colors.white,
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
-        // foregroundColor: Colors.white,
-        // backgroundColor: Colors.teal.shade500,
-        ),
+      foregroundColor: Colors.white,
+      backgroundColor: Colors.blueAccent,
+    ),
   );
 }

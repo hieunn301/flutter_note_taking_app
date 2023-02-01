@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Note',
-      theme: Themes().lightTheme,
+      // theme: Themes().lightTheme,
       darkTheme: Themes().dartTheme,
       themeMode: ThemeMode.system,
       home: Root(),

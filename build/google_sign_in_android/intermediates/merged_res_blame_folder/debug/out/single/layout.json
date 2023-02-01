@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\google_sign_in_android\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
+    }
+]

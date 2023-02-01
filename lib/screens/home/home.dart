@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_note/components/custom_bottom_nav_bar.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/noteController.dart';
+import 'package:flutter_note/enums.dart';
 import 'package:flutter_note/screens/home/add_note.dart';
 import 'package:flutter_note/screens/home/note_list.dart';
 import 'package:flutter_note/screens/settings/setting.dart';
 import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 
 class HomePage extends GetWidget<AuthController> {
+  static String routeName = "/home";
   final AuthController authController = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {
@@ -71,6 +73,7 @@ class HomePage extends GetWidget<AuthController> {
               )),
         ),
       ),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
       floatingActionButton: FloatingActionButton(
           tooltip: "Add Note",
           onPressed: () {

@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/userController.dart';
+import 'package:flutter_note/screens/auth/custom_suffix_icon.dart';
+import 'package:flutter_note/screens/auth/forgot_password.dart';
 import 'package:flutter_note/screens/auth/signup.dart';
+import 'package:flutter_note/screens/auth/social_card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class Login extends StatelessWidget {
+class Login extends StatefulWidget {
+  @override
+  State<Login> createState() => _LoginState();
+}
+
+class _LoginState extends State<Login> {
+  bool remember = false;
   final _formKey = GlobalKey<FormState>();
+
   final AuthController authController = Get.find<AuthController>();
+
   final UserController userController = Get.find<UserController>();
 
   @override
@@ -15,6 +27,7 @@ class Login extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Container(
+            width: double.infinity,
             child: Padding(
               padding: const EdgeInsets.symmetric(
                 vertical: 100,
@@ -24,16 +37,41 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Text(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/icons/trello_bg_bl.svg',
+                        height: MediaQuery.of(context).size.height * 0.05,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Trello",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Text(
+                    "Sign in with your email and password",
+                    textAlign: TextAlign.center,
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.07),
+                  // SignForm(),
+                  /* Text(
                     'Hello there,\nWelocome back',
                     style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
-                  SizedBox(height: 20),
+                  ), */
                   Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(15.0),
                     child: Form(
                       key: _formKey,
                       autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -49,22 +87,22 @@ class Login extends StatelessWidget {
                                   ? null
                                   : "Please Enter Correct Email";
                             },
-                            decoration: InputDecoration(
-                                enabledBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Theme.of(context).buttonColor,
-                                  ),
-                                ),
-                                focusedBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Theme.of(context).accentColor,
-                                  ),
-                                ),
-                                prefixIcon: Icon(
-                                  Icons.email,
-                                  color: Colors.grey,
-                                ),
-                                hintText: "EMAIL"),
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 1, color: Colors.blueAccent),
+                              ),
+                              labelText: "Email",
+                              hintText: "Enter your email",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/Mail.svg"),
+                            ),
                           ),
                           SizedBox(
                             height: 30,
@@ -79,22 +117,22 @@ class Login extends StatelessWidget {
                               }
                               return null;
                             },
-                            decoration: InputDecoration(
-                                prefixIcon: Icon(
-                                  Icons.security,
-                                  color: Colors.grey,
-                                ),
-                                enabledBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Theme.of(context).buttonColor,
-                                  ),
-                                ),
-                                focusedBorder: UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Theme.of(context).accentColor,
-                                  ),
-                                ),
-                                hintText: "PASSWORD"),
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 1, color: Colors.blueAccent),
+                              ),
+                              labelText: "Password",
+                              hintText: "Enter your password",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/Lock.svg"),
+                            ),
                             obscureText: true,
                           ),
                         ],
@@ -102,24 +140,51 @@ class Login extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 30,
+                  ),
+                  Row(
+                    children: [
+                      Checkbox(
+                        value: remember,
+                        activeColor: Colors.blue,
+                        onChanged: (value) {
+                          setState(() {
+                            remember = value;
+                          });
+                        },
+                      ),
+                      const Text("Remember me"),
+                      const Spacer(),
+                      GestureDetector(
+                        /* onTap: () => Navigator.pushNamed(
+                            context, ForgotPassword.routeName), */
+                        onTap: () {
+                          Get.to(() => ForgotPassword());
+                        },
+                        child: const Text(
+                          "Forgot Password",
+                          style:
+                              TextStyle(decoration: TextDecoration.underline),
+                        ),
+                      )
+                    ],
                   ),
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
-                        Colors.tealAccent.shade700,
+                        Colors.blue,
                       ),
                       padding: MaterialStateProperty.all(
                         EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                       ),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(10)),
                       ),
                       minimumSize: MaterialStateProperty.all(
                         Size(
-                          250,
-                          50,
+                          MediaQuery.of(context).size.width * 0.8,
+                          MediaQuery.of(context).size.height * 0.07,
                         ),
                       ),
                     ),
@@ -163,6 +228,30 @@ class Login extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SocialCard(
+                        icon: "assets/icons/google-icon.svg",
+                        press: () {},
+                      ),
+                      SocialCard(
+                        icon: "assets/icons/facebook-2.svg",
+                        press: () {},
+                      ),
+                      SocialCard(
+                        icon: "assets/icons/twitter.svg",
+                        press: () {},
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                  Text(
+                    'By signing up, I accept Cloud term of Service \nand acknowledge the Privacy Police',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.caption,
                   ),
                 ],
               ),

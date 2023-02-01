@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/userController.dart';
+import 'package:flutter_note/screens/auth/custom_suffix_icon.dart';
+import 'package:flutter_note/screens/auth/social_card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class SignUp extends StatelessWidget {
@@ -23,12 +26,29 @@ class SignUp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Text(
-                    'Get Started!',
-                    style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(
+                        'assets/icons/trello_bg_bl.svg',
+                        height: MediaQuery.of(context).size.height * 0.05,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Trello",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Text(
+                    "Sign up for your account",
+                    textAlign: TextAlign.center,
                   ),
                   SizedBox(
                     height: 20,
@@ -41,18 +61,21 @@ class SignUp extends StatelessWidget {
                       child: Column(
                         children: [
                           TextFormField(
-                            decoration: InputDecoration(
-                              hintText: "NAME",
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Theme.of(context).buttonColor,
-                                ),
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: Theme.of(context).accentColor,
-                                ),
+                                    width: 1, color: Colors.blueAccent),
                               ),
+                              labelText: "Name",
+                              hintText: "Enter your Name",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/User.svg"),
                             ),
                             controller: authController.name,
                             validator: (value) {
@@ -75,18 +98,21 @@ class SignUp extends StatelessWidget {
                                   ? null
                                   : "Please Enter Correct Email";
                             },
-                            decoration: InputDecoration(
-                              hintText: "EMAIL",
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Theme.of(context).buttonColor,
-                                ),
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: Theme.of(context).accentColor,
-                                ),
+                                    width: 1, color: Colors.blueAccent),
                               ),
+                              labelText: "Email",
+                              hintText: "Enter your email",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/Mail.svg"),
                             ),
                             controller: authController.email,
                           ),
@@ -102,18 +128,21 @@ class SignUp extends StatelessWidget {
                               }
                               return null;
                             },
-                            decoration: InputDecoration(
-                              hintText: "PASSWORD",
-                              enabledBorder: UnderlineInputBorder(
-                                borderSide: BorderSide(
-                                  color: Theme.of(context).buttonColor,
-                                ),
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
-                                  color: Theme.of(context).accentColor,
-                                ),
+                                    width: 1, color: Colors.blueAccent),
                               ),
+                              labelText: "Password",
+                              hintText: "Enter your password",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/Lock.svg"),
                             ),
                             obscureText: true,
                             controller: authController.password,
@@ -128,14 +157,14 @@ class SignUp extends StatelessWidget {
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
-                        Colors.tealAccent.shade700,
+                        Colors.blue,
                       ),
                       padding: MaterialStateProperty.all(
                         EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                       ),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(10)),
                       ),
                       minimumSize: MaterialStateProperty.all(
                         Size(
@@ -184,6 +213,30 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SocialCard(
+                        icon: "assets/icons/google-icon.svg",
+                        press: () {},
+                      ),
+                      SocialCard(
+                        icon: "assets/icons/facebook-2.svg",
+                        press: () {},
+                      ),
+                      SocialCard(
+                        icon: "assets/icons/twitter.svg",
+                        press: () {},
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                  Text(
+                    'By signing up, I accept Cloud term of Service \nand acknowledge the Privacy Police',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.caption,
                   ),
                 ],
               ),

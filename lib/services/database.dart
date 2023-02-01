@@ -64,6 +64,7 @@ class Database {
         "body": body,
         "creationDate": Timestamp.now(),
       });
+      return true;
     } catch (e) {
       print(e.message);
     }
