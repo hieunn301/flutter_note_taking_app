@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/screens/settings/account.dart';
 import 'package:flutter_note/screens/settings/dark_mode.dart';
@@ -12,6 +12,15 @@ class Setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "Settings",
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(
@@ -20,32 +29,6 @@ class Setting extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CustomIconBtn(
-                      icon: Icon(
-                        Icons.arrow_back_ios,
-                      ),
-                      color: Theme.of(context).backgroundColor,
-                      onPressed: () {
-                        Get.back();
-                      },
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 4,
-                    ),
-                    Text(
-                      "Settings",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               SizedBox(
                 height: 20,
               ),
@@ -72,3 +55,4 @@ class Setting extends StatelessWidget {
     );
   }
 }
+ */

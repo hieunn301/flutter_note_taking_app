@@ -1,19 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/userController.dart';
 import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
 import 'package:flutter_note/services/database.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
-class AddNotePage extends StatelessWidget {
+class AddProject extends StatefulWidget {
+  @override
+  State<AddProject> createState() => _AddProjectState();
+}
+
+class _AddProjectState extends State<AddProject> {
   final UserController userController = Get.find<UserController>();
+
   final AuthController authController = Get.find<AuthController>();
+
   final TextEditingController titleController = TextEditingController();
+
   final TextEditingController bodyController = TextEditingController();
+
+  String selectedTime;
+  Future<void> _show() async {
+    final TimeOfDay result =
+        await showTimePicker(context: context, initialTime: TimeOfDay.now());
+    if (result != null) {
+      setState(() {
+        selectedTime = result.format(context);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "Add project",
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Container(
           height: size.height,
@@ -21,30 +52,6 @@ class AddNotePage extends StatelessWidget {
             16.0,
           ),
           child: Column(children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                CustomIconBtn(
-                  color: Theme.of(context).backgroundColor,
-                  onPressed: () {
-                    Get.back();
-                  },
-                  icon: Icon(
-                    Icons.arrow_back_ios_outlined,
-                  ),
-                ),
-                SizedBox(
-                  width: MediaQuery.of(context).size.width / 4,
-                ),
-                Text(
-                  "Notes",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
             SizedBox(
               height: 20,
             ),
@@ -53,6 +60,7 @@ class AddNotePage extends StatelessWidget {
                 child: Column(
                   children: [
                     TextFormField(
+                      cursorColor: Colors.black,
                       maxLines: null,
                       autofocus: true,
                       controller: titleController,
@@ -62,7 +70,7 @@ class AddNotePage extends StatelessWidget {
                         hintText: "Title",
                       ),
                       style: TextStyle(
-                        fontSize: 26.0,
+                        fontSize: 24,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -70,6 +78,7 @@ class AddNotePage extends StatelessWidget {
                       height: 20,
                     ),
                     TextFormField(
+                      cursorColor: Colors.black,
                       controller: bodyController,
                       keyboardType: TextInputType.multiline,
                       maxLines: null,
@@ -99,8 +108,11 @@ class AddNotePage extends StatelessWidget {
             Get.back();
           }
         },
-        label: Text("Save"),
-        icon: Icon(Icons.save),
+        label: Text(
+          "Add Project",
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.blue,
       ),
     );
   }

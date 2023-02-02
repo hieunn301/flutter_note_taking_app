@@ -7,6 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class SignUp extends StatelessWidget {
+  static String routeName = "/sign_up";
   final _formKey = GlobalKey<FormState>();
   final AuthController authController = Get.find<AuthController>();
   final UserController userController = Get.find<UserController>();

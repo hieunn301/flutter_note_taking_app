@@ -1,109 +1,229 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
+import 'package:flutter_note/controllers/noteController.dart';
 import 'package:flutter_note/models/noteModel.dart';
+import 'package:flutter_note/screens/home/add_note.dart';
+import 'package:flutter_note/screens/home/note_list.dart';
 import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
 import 'package:flutter_note/services/database.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-class ShowNote extends StatelessWidget {
+/* DateTime now = DateTime.now();
+String formattedTime = DateFormat.Hms().format(now); */
+
+class ShowNote extends StatefulWidget {
   final NoteModel noteData;
   final int index;
   ShowNote({this.noteData, this.index});
+
+  @override
+  State<ShowNote> createState() => _ShowNoteState();
+}
+
+class _ShowNoteState extends State<ShowNote> {
   final AuthController authController = Get.find<AuthController>();
+
   final TextEditingController titleController = TextEditingController();
+
   final TextEditingController bodyController = TextEditingController();
+
+  String selectedTime;
+  Future<void> _show() async {
+    final TimeOfDay result =
+        await showTimePicker(context: context, initialTime: TimeOfDay.now());
+
+    if (result != null) {
+      setState(() {
+        selectedTime = result.format(context);
+      });
+    }
+  }
+
+  DateTime selectedDate = DateTime.now();
+  selectDate(BuildContext context) async {
+    final DateTime picked = await showDatePicker(
+      context: context,
+      initialDate: selectedDate,
+      firstDate: DateTime(2020),
+      lastDate: DateTime(2030),
+    );
+    if (picked != null && picked != selectedDate)
+      setState(() {
+        selectedDate = picked;
+      });
+  }
 
   @override
   Widget build(BuildContext context) {
-    titleController.text = noteData.title;
-    bodyController.text = noteData.body;
+    titleController.text = widget.noteData.title;
+    bodyController.text = widget.noteData.body;
     var formattedDate =
-        DateFormat.yMMMd().format(noteData.creationDate.toDate());
-    var time = DateFormat.jm().format(noteData.creationDate.toDate());
+        DateFormat.yMMMd().format(widget.noteData.creationDate.toDate());
+    var time = DateFormat.jm().format(widget.noteData.creationDate.toDate());
     return Scaffold(
-        body: SafeArea(
-          child: Container(
-            padding: EdgeInsets.all(
-              16.0,
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CustomIconBtn(
-                      color: Theme.of(context).backgroundColor,
-                      onPressed: () {
-                        Get.back();
-                      },
-                      icon: Icon(
-                        Icons.arrow_back_ios_outlined,
-                      ),
-                    ),
-                    CustomIconBtn(
-                      color: Theme.of(context).backgroundColor,
-                      onPressed: () {
-                        showDeleteDialog(context, noteData);
-                      },
-                      icon: Icon(
-                        Icons.delete,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Text("$formattedDate at $time"),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        TextFormField(
-                          controller: titleController,
-                          maxLines: null,
-                          decoration: InputDecoration.collapsed(
-                            hintText: "Title",
-                          ),
-                          style: TextStyle(
-                            fontSize: 26.0,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        TextFormField(
-                          autofocus: true,
-                          controller: bodyController,
-                          keyboardType: TextInputType.multiline,
-                          maxLines: null,
-                          decoration: InputDecoration.collapsed(
-                            hintText: "Type something...",
-                          ),
-                          style: TextStyle(
-                            fontSize: 20.0,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "Show notes",
+          style: TextStyle(
+            fontSize: 24,
           ),
         ),
-        floatingActionButton: FloatingActionButton.extended(
+      ),
+      body: SafeArea(
+        child: Container(
+          padding: EdgeInsets.all(
+            16.0,
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  /* CustomIconBtn(
+                    color: Theme.of(context).backgroundColor,
+                    onPressed: () {
+                      showDeleteDialog(context, widget.noteData);
+                    },
+                    icon: Icon(
+                      Icons.delete,
+                    ),
+                  ), */
+                ],
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        cursorColor: Colors.black,
+                        controller: titleController,
+                        maxLines: null,
+                        decoration: InputDecoration.collapsed(
+                          hintText: "Title",
+                        ),
+                        style: TextStyle(
+                          fontSize: 26.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      TextFormField(
+                        cursorColor: Colors.black,
+                        autofocus: true,
+                        controller: bodyController,
+                        keyboardType: TextInputType.multiline,
+                        maxLines: null,
+                        decoration: InputDecoration.collapsed(
+                          hintText: "Type something...",
+                        ),
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Text("Created: $formattedDate at $time"),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            children: [
+                              Text('Expired: '),
+                              TextButton(
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.white,
+                                  padding: EdgeInsets.all(0),
+                                ),
+                                onPressed: () => selectDate(context),
+                                child: Text(
+                                  "${selectedDate.toLocal()}".split(' ')[0],
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                              Text(" at")
+                            ],
+                          ),
+                          TextButton(
+                            style: TextButton.styleFrom(
+                              foregroundColor: Colors.white,
+                              padding: EdgeInsets.all(0),
+                            ),
+                            onPressed: _show,
+                            child: Text(
+                              '$time',
+                              style: TextStyle(color: Colors.black),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      CustomIconBtn(
+                        color: Theme.of(context).backgroundColor,
+                        onPressed: () {
+                          authController.axisCount.value =
+                              authController.axisCount.value == 2 ? 4 : 2;
+                        },
+                        icon: Icon(authController.axisCount.value == 2
+                            ? Icons.list
+                            : Icons.grid_on),
+                      ),
+                      GetX<NoteController>(
+                      init: Get.put<NoteController>(NoteController()),
+                      builder: (NoteController noteController) {
+                        if (noteController != null &&
+                            noteController.notes != null) {
+                          return NoteList();
+                        } else {
+                          return Text("No notes, create some ");
+                        }
+                      }),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      floatingActionButton:
+          Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+        FloatingActionButton.extended(
+          backgroundColor: Colors.grey.shade100,
+          label: Text(
+            'Delete',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
           onPressed: () {
-            if (titleController.text != noteData.title ||
-                bodyController.text != noteData.body) {
-              Database().updateNote(authController.user.uid,
-                  titleController.text, bodyController.text, noteData.id);
+            showDeleteDialog(context, widget.noteData);
+          },
+          heroTag: null,
+        ),
+        SizedBox(
+          height: 20,
+          width: 30,
+        ),
+        FloatingActionButton.extended(
+          backgroundColor: Colors.blue,
+          label: Text(
+            'Update',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          onPressed: () {
+            if (titleController.text != widget.noteData.title ||
+                bodyController.text != widget.noteData.body) {
+              Database().updateNote(
+                  authController.user.uid,
+                  titleController.text,
+                  bodyController.text,
+                  widget.noteData.id);
               Get.back();
               titleController.clear();
               bodyController.clear();
@@ -111,9 +231,22 @@ class ShowNote extends StatelessWidget {
               showSameContentDialog(context);
             }
           },
-          label: Text("Save"),
-          icon: Icon(Icons.save),
-        ));
+          heroTag: null,
+        ),
+        FloatingActionButton(
+          tooltip: "Add Note",
+          onPressed: () {
+            Get.to(() => AddProject());
+          },
+          backgroundColor: Colors.blue,
+          child: Icon(
+            Icons.add,
+            size: 30,
+            color: Colors.white,
+          ),
+        ),
+      ]),
+    );
   }
 }
 

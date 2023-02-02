@@ -12,7 +12,7 @@ class Themes {
         // backgroundColor: Colors.grey.shade300,
         ),
     primaryColor: Colors.blue,
-    accentColor: Colors.blueAccent,
+    accentColor: Colors.red,
     buttonColor: Colors.black,
   );
 

@@ -10,6 +10,15 @@ class Account extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "My Account",
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(
@@ -19,32 +28,6 @@ class Account extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    CustomIconBtn(
-                      icon: Icon(
-                        Icons.arrow_back_ios,
-                      ),
-                      color: Theme.of(context).backgroundColor,
-                      onPressed: () {
-                        Get.back();
-                      },
-                    ),
-                    SizedBox(
-                      width: MediaQuery.of(context).size.width / 4,
-                    ),
-                    Text(
-                      "Account",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               SizedBox(
                 height: 20,
               ),
@@ -56,7 +39,7 @@ class Account extends StatelessWidget {
                       TextSpan(
                         text: "Hi, ${userController.user.name} !\n",
                         style: TextStyle(
-                          color: Get.isDarkMode ? Colors.black : Colors.white,
+                          color: Get.isDarkMode ? Colors.black : Colors.black,
                           fontSize: 18,
                         ),
                       ),
@@ -69,25 +52,12 @@ class Account extends StatelessWidget {
                       TextSpan(
                         text: "   ${userController.user.email}\n",
                         style: TextStyle(
-                          color: Get.isDarkMode ? Colors.black : Colors.white,
+                          color: Get.isDarkMode ? Colors.black : Colors.black,
                           fontSize: 16,
                         ),
                       ),
                     ],
                   ),
-                ),
-              ),
-              ListTile(
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 15,
-                ),
-                onTap: () {
-                  showSignOutDialog(context);
-                },
-                title: Text("Logout"),
-                leading: Icon(
-                  Icons.power_settings_new_outlined,
-                  color: Theme.of(context).iconTheme.color,
                 ),
               ),
             ],
@@ -96,66 +66,4 @@ class Account extends StatelessWidget {
       ),
     );
   }
-}
-
-void showSignOutDialog(BuildContext context) async {
-  final AuthController authController = Get.find<AuthController>();
-  print("in dialog ");
-  await showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        contentPadding: EdgeInsets.all(20),
-        actionsPadding: EdgeInsets.only(right: 60),
-        backgroundColor: Theme.of(context).backgroundColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(20.0),
-          ),
-        ),
-        title: Text(
-          "Are you sure you want to log out?",
-          style: TextStyle(
-            color: Theme.of(context).buttonColor,
-            fontSize: 20,
-          ),
-          textAlign: TextAlign.center,
-        ),
-        content: Text(
-          'Your notes are already saved so when logging back your noteswill be there.',
-          style: Theme.of(context).textTheme.bodyText1,
-          textAlign: TextAlign.center,
-        ),
-        actions: <Widget>[
-          ElevatedButton(
-            child: Text("Log Out",
-                style: TextStyle(
-                  color: Theme.of(context).backgroundColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                )),
-            onPressed: () {
-              Get.back();
-              authController.signout();
-              Get.close(2);
-            },
-            style: ElevatedButton.styleFrom(
-              primary: Theme.of(context).buttonColor,
-            ),
-          ),
-          TextButton(
-            child: Text("Cancel",
-                style: TextStyle(
-                  color: Theme.of(context).buttonColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                )),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      );
-    },
-  );
 }

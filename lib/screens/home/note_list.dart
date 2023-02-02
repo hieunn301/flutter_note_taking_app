@@ -13,15 +13,16 @@ class NoteList extends StatelessWidget {
   final AuthController authController = Get.find<AuthController>();
   final NoteController noteController = Get.find<NoteController>();
   final lightColors = [
-    Colors.amber.shade300,
-    Colors.lightGreen.shade300,
-    Colors.lightBlue.shade300,
-    Colors.orange.shade300,
+    // Colors.amber.shade300,
+    // Colors.lightGreen.shade300,
+    // Colors.lightBlue.shade300,
+    // Colors.orange.shade300,
     // Colors.pinkAccent.shade100,
-    Colors.tealAccent.shade100,
+    // Colors.tealAccent.shade100,
     // Colors.purpleAccent,
-    Colors.greenAccent.shade400,
-    Colors.cyanAccent,
+    // Colors.greenAccent.shade400,
+    // Colors.cyanAccent,
+    Colors.grey.shade200,
   ];
 
   @override
@@ -38,7 +39,7 @@ class NoteList extends StatelessWidget {
           var formattedDate = DateFormat.yMMMd()
               .format(noteController.notes[index].creationDate.toDate());
           Random random = new Random();
-          Color bg = lightColors[random.nextInt(8)];
+          Color bg = lightColors[random.nextInt(1)];
           return GestureDetector(
             onTap: () {
               Get.to(() => ShowNote(

@@ -4,7 +4,7 @@
             "outputFile": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

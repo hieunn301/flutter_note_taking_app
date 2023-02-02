@@ -8,6 +8,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class ForgotPassword extends StatefulWidget {
+  static String routeName = "/forgot_password";
   @override
   State<ForgotPassword> createState() => _ForgotPasswordState();
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/enums.dart';
 import 'package:flutter_note/screens/home/home.dart';
-import 'package:flutter_note/screens/settings/setting.dart';
+import 'package:flutter_note/screens/notify/notify.dart';
+import 'package:flutter_note/screens/profile/profile_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomBottomNavBar extends StatelessWidget {
@@ -52,17 +53,17 @@ class CustomBottomNavBar extends StatelessWidget {
               ),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/Bell.svg"),
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, Notify.routeName),
               ),
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/User Icon.svg",
-                  color: MenuState.setting == selectedMenu
+                  color: MenuState.profile == selectedMenu
                       ? Colors.blue
                       : inActiveIconColor,
                 ),
                 onPressed: () =>
-                    Navigator.pushNamed(context, Setting.routeName),
+                    Navigator.pushNamed(context, ProfileScreen.routeName),
               ),
             ],
           )),

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\image_picker_android\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\7569ddbd0668cc040ed437e2e88941aa\\transformed\\core-1.8.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    }
+]

@@ -8,6 +8,9 @@ MERGED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\andr
 MERGED from [:firebase_auth] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:cloud_firestore] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:google_sign_in_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\2d734743a18ed3abffc00ae5d72c6d8d\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3db19555b4f418a1056f179a82c918f1\transformed\jetified-firebase-common-ktx-20.3.0\AndroidManifest.xml:2:1-20:12
@@ -46,23 +49,24 @@ MERGED from [androidx.loader:loader:1.0.0] C:\Users\hieunn1\.gradle\caches\trans
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\141be1b0ac2892d384f76ed2510bec02\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a0a9d4576f5f4aff7dbe8628dd243e22\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\978d29bf58f01a782def8177a23b524c\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\cd425a5799a23a539480b575c7d10038\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\hieunn1\.gradle\caches\transforms-3\afb3da3b38534fcd1cea0b187ceab632\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\bc6eb9a5a39bfd81877a9579b3ea819f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c5f937afb2a59c71d62973940dd4352a\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\d814e58640adb67e38dad8b249c2a67e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\87107420e44ce447ef3d143477697612\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hieunn1\.gradle\caches\transforms-3\013c94ac95a95c80b7c7c27f32b87465\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hieunn1\.gradle\caches\transforms-3\47e1f7ff2d9a6a3e5f12ca3f26f40234\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\6cf5a4f60a85f6e8ca40169639a3fdeb\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\dcc2a19a34724fb456af101c276d8506\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7e2560caf0a31ed4781ead99417baa63\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\d1a45036148a6911d4cca13d18bc9704\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\1c70ce48c39ee8bccc52722ebd08e607\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\hieunn1\.gradle\caches\transforms-3\4c69a90d1053015dd68dbb3a465ac465\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\26549e76a9602352000f73660f11a62f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 INJECTED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -88,6 +92,8 @@ MERGED from [:cloud_firestore] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_n
 MERGED from [:cloud_firestore] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-17:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\2d734743a18ed3abffc00ae5d72c6d8d\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\2d734743a18ed3abffc00ae5d72c6d8d\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3db19555b4f418a1056f179a82c918f1\transformed\jetified-firebase-common-ktx-20.3.0\AndroidManifest.xml:10:5-18:19
@@ -136,12 +142,12 @@ MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\4fb2cde16cbd8a9be0fc664b16d5cb1f\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\421ba40bc38c72041240c675c9122e63\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\421ba40bc38c72041240c675c9122e63\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hieunn1\.gradle\caches\transforms-3\47e1f7ff2d9a6a3e5f12ca3f26f40234\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hieunn1\.gradle\caches\transforms-3\47e1f7ff2d9a6a3e5f12ca3f26f40234\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\main\AndroidManifest.xml:4:9-37
 	android:icon
@@ -198,6 +204,12 @@ MERGED from [:cloud_firestore] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_n
 MERGED from [:cloud_firestore] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\path_provider_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:google_sign_in_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\google_sign_in_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\2d734743a18ed3abffc00ae5d72c6d8d\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:5:5-44
@@ -274,28 +286,30 @@ MERGED from [androidx.activity:activity:1.0.0] C:\Users\hieunn1\.gradle\caches\t
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a0a9d4576f5f4aff7dbe8628dd243e22\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\978d29bf58f01a782def8177a23b524c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\978d29bf58f01a782def8177a23b524c\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] C:\Users\hieunn1\.gradle\caches\transforms-3\3d7cc0f02857dd28693ed8bf2461120a\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\cd425a5799a23a539480b575c7d10038\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\cd425a5799a23a539480b575c7d10038\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7569ddbd0668cc040ed437e2e88941aa\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\hieunn1\.gradle\caches\transforms-3\afb3da3b38534fcd1cea0b187ceab632\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\hieunn1\.gradle\caches\transforms-3\afb3da3b38534fcd1cea0b187ceab632\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\bc6eb9a5a39bfd81877a9579b3ea819f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\bc6eb9a5a39bfd81877a9579b3ea819f\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c5f937afb2a59c71d62973940dd4352a\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c5f937afb2a59c71d62973940dd4352a\transformed\jetified-firebase-components-17.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\d814e58640adb67e38dad8b249c2a67e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\d814e58640adb67e38dad8b249c2a67e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\87107420e44ce447ef3d143477697612\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\87107420e44ce447ef3d143477697612\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hieunn1\.gradle\caches\transforms-3\013c94ac95a95c80b7c7c27f32b87465\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\hieunn1\.gradle\caches\transforms-3\013c94ac95a95c80b7c7c27f32b87465\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hieunn1\.gradle\caches\transforms-3\47e1f7ff2d9a6a3e5f12ca3f26f40234\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\hieunn1\.gradle\caches\transforms-3\47e1f7ff2d9a6a3e5f12ca3f26f40234\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\6cf5a4f60a85f6e8ca40169639a3fdeb\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\6cf5a4f60a85f6e8ca40169639a3fdeb\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\c46a52aea97b78be3c4d84a6d1a4f4ed\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\0aed1368e7d03d5bbdfd43f3c37d412e\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\a805cf2b71bb3e3290c9a7558187754a\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\dcc2a19a34724fb456af101c276d8506\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\dcc2a19a34724fb456af101c276d8506\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7e2560caf0a31ed4781ead99417baa63\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\7e2560caf0a31ed4781ead99417baa63\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\d1a45036148a6911d4cca13d18bc9704\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -304,10 +318,10 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\hieunn1\.gradle\caches\transfo
 MERGED from [androidx.print:print:1.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\1c70ce48c39ee8bccc52722ebd08e607\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\hieunn1\.gradle\caches\transforms-3\4c69a90d1053015dd68dbb3a465ac465\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\hieunn1\.gradle\caches\transforms-3\4c69a90d1053015dd68dbb3a465ac465\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\26549e76a9602352000f73660f11a62f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\hieunn1\.gradle\caches\transforms-3\26549e76a9602352000f73660f11a62f\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\hieunn1\.gradle\caches\transforms-3\457b12e399f887f1bb637ad55aca7339\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 INJECTED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\debug\AndroidManifest.xml
 INJECTED from D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
@@ -382,6 +396,22 @@ ADDED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note
 		ADDED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+	android:exported
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+	android:resource
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+	android:name
+		ADDED from [:image_picker_android] D:\ETC\ETC-Flutter\learn_flutter\github\flutter_note_taking_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
 meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
 ADDED from [com.google.firebase:firebase-analytics-ktx:21.2.0] C:\Users\hieunn1\.gradle\caches\transforms-3\2d734743a18ed3abffc00ae5d72c6d8d\transformed\jetified-firebase-analytics-ktx-21.2.0\AndroidManifest.xml:11:13-13:85
 	android:value

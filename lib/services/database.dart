@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_note/models/noteModel.dart';
+import 'package:flutter_note/models/notifyModel.dart';
+import 'package:flutter_note/models/projectModel.dart';
 import 'package:flutter_note/models/user.dart';
 import 'package:uuid/uuid.dart';
 
@@ -7,6 +9,7 @@ class Database {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final String userCollection = "users";
   final String noteCollection = "notes";
+  final String notifyCollection = "notify";
 
   Future<bool> createNewUser(UserModel user) async {
     try {
@@ -96,6 +99,40 @@ class Database {
         retVal.add(NoteModel.fromDocumentSnapshot(element));
       });
       return retVal;
+    });
+  }
+
+  Stream<List<NotifyModel>> notifyStream(String uid) {
+    return _firestore
+        .collection(userCollection)
+        .doc(uid)
+        .collection(notifyCollection)
+        .orderBy("creationDate", descending: true)
+        .snapshots()
+        .map((QuerySnapshot query) {
+      List<NotifyModel> retVal1 = [];
+      query.docs.forEach((element) {
+        retVal1.add(NotifyModel.fromDocumentSnapshot(element));
+      });
+      print(retVal1);
+      return retVal1;
+    });
+  }
+
+  Stream<List<ProjectModel>> projectStream(String uid) {
+    return _firestore
+        .collection(userCollection)
+        .doc(uid)
+        .collection(notifyCollection)
+        .orderBy("creationDate", descending: true)
+        .snapshots()
+        .map((QuerySnapshot query) {
+      List<ProjectModel> retVal1 = [];
+      query.docs.forEach((element) {
+        retVal1.add(ProjectModel.fromDocumentSnapshot(element));
+      });
+      print(retVal1);
+      return retVal1;
     });
   }
 }

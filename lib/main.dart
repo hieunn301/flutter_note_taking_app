@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/userController.dart';
+import 'package:flutter_note/routes.dart';
 import 'package:flutter_note/utils/root.dart';
 import 'package:flutter_note/utils/theme.dart';
 import 'package:get/get.dart';
@@ -21,10 +22,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Note',
-      // theme: Themes().lightTheme,
+      theme: Themes().lightTheme,
       darkTheme: Themes().dartTheme,
       themeMode: ThemeMode.system,
       home: Root(),
+      // initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }

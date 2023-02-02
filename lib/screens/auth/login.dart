@@ -9,6 +9,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class Login extends StatefulWidget {
+  static String routeName = "/log_in";
   @override
   State<Login> createState() => _LoginState();
 }

@@ -5,8 +5,8 @@ import 'package:flutter_note/controllers/noteController.dart';
 import 'package:flutter_note/enums.dart';
 import 'package:flutter_note/screens/home/add_note.dart';
 import 'package:flutter_note/screens/home/note_list.dart';
-import 'package:flutter_note/screens/settings/setting.dart';
 import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class HomePage extends GetWidget<AuthController> {
@@ -15,6 +15,29 @@ class HomePage extends GetWidget<AuthController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.blue,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(
+              'assets/icons/trello_bg_wh.svg',
+              height: MediaQuery.of(context).size.height * 0.05,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Trello",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(
@@ -23,38 +46,46 @@ class HomePage extends GetWidget<AuthController> {
           ),
           child: Obx(() => Column(
                 children: [
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        CustomIconBtn(
-                          color: Theme.of(context).backgroundColor,
-                          onPressed: () {
-                            authController.axisCount.value =
-                                authController.axisCount.value == 2 ? 4 : 2;
-                          },
-                          icon: Icon(authController.axisCount.value == 2
-                              ? Icons.list
-                              : Icons.grid_on),
-                        ),
-                        Text(
-                          "Notes",
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * 0.6,
+                          decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextFormField(
+                            cursorColor: Colors.black,
+                            onChanged: (value) => print(value),
+                            decoration: InputDecoration(
+                              focusedBorder: InputBorder.none,
+                              enabledBorder: InputBorder.none,
+                              hintText: "Search",
+                              prefixIcon: Icon(Icons.search),
+                              border: OutlineInputBorder(),
+                            ),
                           ),
                         ),
-                        CustomIconBtn(
-                          color: Theme.of(context).backgroundColor,
-                          onPressed: () {
-                            Get.to(() => Setting());
-                          },
-                          icon: Icon(
-                            Icons.settings,
-                          ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            CustomIconBtn(
+                              color: Theme.of(context).backgroundColor,
+                              onPressed: () {
+                                authController.axisCount.value =
+                                    authController.axisCount.value == 2 ? 4 : 2;
+                              },
+                              icon: Icon(authController.axisCount.value == 2
+                                  ? Icons.list
+                                  : Icons.grid_on),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 20,
@@ -77,11 +108,13 @@ class HomePage extends GetWidget<AuthController> {
       floatingActionButton: FloatingActionButton(
           tooltip: "Add Note",
           onPressed: () {
-            Get.to(() => AddNotePage());
+            Get.to(() => AddProject());
           },
+          backgroundColor: Colors.blue,
           child: Icon(
-            Icons.note_add,
+            Icons.add,
             size: 30,
+            color: Colors.white,
           )),
     );
   }
