@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_core\\intermediates\\res\\merged\\release\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "185",
+                        "endColumns": "100",
+                        "endOffsets": "281"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\421ba40bc38c72041240c675c9122e63\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-b+sr+Latn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "125",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "129",
+                        "endOffsets": "180"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_core\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "185",
+                        "endColumns": "100",
+                        "endOffsets": "281"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\421ba40bc38c72041240c675c9122e63\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-b+sr+Latn\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "125",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "129",
+                        "endOffsets": "180"
+                    }
+                }
+            ]
+        }
+    ]
+}

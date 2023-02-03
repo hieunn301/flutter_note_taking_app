@@ -11,6 +11,7 @@ class AuthController extends GetxController {
   TextEditingController name = TextEditingController();
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
+  TextEditingController repassword = TextEditingController();
   String usersCollection = "users";
   Rx<UserModel> userModel = UserModel().obs;
   Rx<int> axisCount = 2.obs;

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/models/notifyModel.dart';
 import 'package:flutter_note/services/database.dart';
@@ -54,8 +54,9 @@ class _ShowNotifyState extends State<ShowNotify> {
         ),
       ),
       body: SafeArea(
-        child: Text('asdjfbadfjklasd'),
+        child: Text('thong bao 1'),
       ),
     );
   }
 }
+ */

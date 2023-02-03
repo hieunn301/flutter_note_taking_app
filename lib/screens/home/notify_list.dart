@@ -9,6 +9,6 @@ class NotifyList extends StatelessWidget {
   final NotifyController notifyController = Get.find<NotifyController>();
   @override
   Widget build(BuildContext context) {
-    return Text("abc");
+    return Text("thong bao 1");
   }
 }

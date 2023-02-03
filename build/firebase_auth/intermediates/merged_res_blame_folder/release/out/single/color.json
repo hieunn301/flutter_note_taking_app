@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\4ed3998ffb6a323786f0bffd902fdf57\\transformed\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\4ed3998ffb6a323786f0bffd902fdf57\\transformed\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\4ed3998ffb6a323786f0bffd902fdf57\\transformed\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_tint.xml"
+    }
+]

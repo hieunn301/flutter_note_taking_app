@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    }
+]

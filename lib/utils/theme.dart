@@ -8,9 +8,9 @@ class Themes {
       color: Colors.black,
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
-        // foregroundColor: Colors.black,
-        // backgroundColor: Colors.grey.shade300,
-        ),
+      foregroundColor: Colors.black,
+      backgroundColor: Colors.grey.shade300,
+    ),
     primaryColor: Colors.blue,
     accentColor: Colors.red,
     buttonColor: Colors.black,

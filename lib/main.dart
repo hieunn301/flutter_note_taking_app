@@ -19,15 +19,19 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Note',
-      theme: Themes().lightTheme,
-      darkTheme: Themes().dartTheme,
-      themeMode: ThemeMode.system,
-      home: Root(),
-      // initialRoute: SplashScreen.routeName,
-      routes: routes,
-    );
+    return StreamBuilder<Object>(
+        stream: null,
+        builder: (context, snapshot) {
+          return GetMaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Flutter Note',
+            theme: Themes().lightTheme,
+            darkTheme: Themes().dartTheme,
+            themeMode: ThemeMode.system,
+            home: Root(),
+            // initialRoute: SplashScreen.routeName,
+            routes: routes,
+          );
+        });
   }
 }

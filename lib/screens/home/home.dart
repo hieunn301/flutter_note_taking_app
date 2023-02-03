@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_note/components/custom_bottom_nav_bar.dart';
 import 'package:flutter_note/controllers/authController.dart';
 import 'package:flutter_note/controllers/noteController.dart';
+import 'package:flutter_note/controllers/projectController.dart';
 import 'package:flutter_note/enums.dart';
 import 'package:flutter_note/screens/home/add_note.dart';
+import 'package:flutter_note/screens/home/add_project.dart';
 import 'package:flutter_note/screens/home/note_list.dart';
+import 'package:flutter_note/screens/home/project_list.dart';
 import 'package:flutter_note/screens/widgets/custom_icon_btn.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -12,6 +15,7 @@ import 'package:get/get.dart';
 class HomePage extends GetWidget<AuthController> {
   static String routeName = "/home";
   final AuthController authController = Get.find<AuthController>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,6 +104,16 @@ class HomePage extends GetWidget<AuthController> {
                           return Text("No notes, create some ");
                         }
                       }),
+                  /* GetX<ProjectController>(
+                      init: Get.put<ProjectController>(ProjectController()),
+                      builder: (ProjectController projectController) {
+                        if (projectController != null &&
+                            projectController.projects != null) {
+                          return ProjectList();
+                        } else {
+                          return Text("No projects, create some ");
+                        }
+                      }), */
                 ],
               )),
         ),
@@ -108,7 +122,8 @@ class HomePage extends GetWidget<AuthController> {
       floatingActionButton: FloatingActionButton(
           tooltip: "Add Note",
           onPressed: () {
-            Get.to(() => AddProject());
+            Get.to(() => AddNote());
+            // Get.to(() => AddProject());
           },
           backgroundColor: Colors.blue,
           child: Icon(

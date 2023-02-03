@@ -1,4 +1,6 @@
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
@@ -25,7 +27,8 @@ class _ProfilePicState extends State<ProfilePic> {
         children: [
           _imageFile == null
               ? CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/df_avt.png"))
+                  backgroundImage:
+                      AssetImage("assets/images/Profile Image.png"))
               : CircleAvatar(backgroundImage: FileImage(_imageFile)),
           Positioned(
             right: -16,
@@ -59,5 +62,16 @@ class _ProfilePicState extends State<ProfilePic> {
     print('xFile + ${xfile?.path}');
     _imageFile = File(xfile.path);
     setState(() {});
+    // uploadImage();
   }
+
+  /* Future<String> uploadImage() async {
+    TaskSnapshot taskSnapshot = await FirebaseStorage.instance
+        .ref()
+        .child('profile')
+        .child('${FirebaseFirestore.instance.collection("users")}')
+        .putFile(_imageFile);
+    print('11${taskSnapshot.ref.getDownloadURL()}');
+    return taskSnapshot.ref.getDownloadURL();
+  } */
 }

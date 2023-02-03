@@ -76,120 +76,96 @@ class _ShowNoteState extends State<ShowNote> {
           padding: EdgeInsets.all(
             16.0,
           ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  /* CustomIconBtn(
-                    color: Theme.of(context).backgroundColor,
-                    onPressed: () {
-                      showDeleteDialog(context, widget.noteData);
-                    },
-                    icon: Icon(
-                      Icons.delete,
-                    ),
-                  ), */
-                ],
-              ),
-              Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      TextFormField(
-                        cursorColor: Colors.black,
-                        controller: titleController,
-                        maxLines: null,
-                        decoration: InputDecoration.collapsed(
-                          hintText: "Title",
-                        ),
-                        style: TextStyle(
-                          fontSize: 26.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      TextFormField(
-                        cursorColor: Colors.black,
-                        autofocus: true,
-                        controller: bodyController,
-                        keyboardType: TextInputType.multiline,
-                        maxLines: null,
-                        decoration: InputDecoration.collapsed(
-                          hintText: "Type something...",
-                        ),
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 50,
-                      ),
-                      Text("Created: $formattedDate at $time"),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            children: [
-                              Text('Expired: '),
-                              TextButton(
-                                style: TextButton.styleFrom(
-                                  foregroundColor: Colors.white,
-                                  padding: EdgeInsets.all(0),
-                                ),
-                                onPressed: () => selectDate(context),
-                                child: Text(
-                                  "${selectedDate.toLocal()}".split(' ')[0],
-                                  style: TextStyle(color: Colors.black),
-                                ),
-                              ),
-                              Text(" at")
-                            ],
-                          ),
-                          TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Colors.white,
-                              padding: EdgeInsets.all(0),
-                            ),
-                            onPressed: _show,
-                            child: Text(
-                              '$time',
-                              style: TextStyle(color: Colors.black),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      CustomIconBtn(
-                        color: Theme.of(context).backgroundColor,
-                        onPressed: () {
-                          authController.axisCount.value =
-                              authController.axisCount.value == 2 ? 4 : 2;
-                        },
-                        icon: Icon(authController.axisCount.value == 2
-                            ? Icons.list
-                            : Icons.grid_on),
-                      ),
-                      GetX<NoteController>(
-                      init: Get.put<NoteController>(NoteController()),
-                      builder: (NoteController noteController) {
-                        if (noteController != null &&
-                            noteController.notes != null) {
-                          return NoteList();
-                        } else {
-                          return Text("No notes, create some ");
-                        }
-                      }),
-                    ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                TextFormField(
+                  cursorColor: Colors.black,
+                  controller: titleController,
+                  maxLines: null,
+                  decoration: InputDecoration.collapsed(
+                    hintText: "Title",
+                  ),
+                  style: TextStyle(
+                    fontSize: 26.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
-            ],
+                TextFormField(
+                  cursorColor: Colors.black,
+                  autofocus: true,
+                  controller: bodyController,
+                  keyboardType: TextInputType.multiline,
+                  maxLines: null,
+                  decoration: InputDecoration.collapsed(
+                    hintText: "Type something...",
+                  ),
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                SizedBox(
+                  height: 50,
+                ),
+                Text("Created: $formattedDate at $time"),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      children: [
+                        Text('Expired: '),
+                        TextButton(
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.white,
+                            padding: EdgeInsets.all(0),
+                          ),
+                          onPressed: () => selectDate(context),
+                          child: Text(
+                            "${selectedDate.toLocal()}".split(' ')[0],
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                        Text(" at")
+                      ],
+                    ),
+                    TextButton(
+                      style: TextButton.styleFrom(
+                        foregroundColor: Colors.white,
+                        padding: EdgeInsets.all(0),
+                      ),
+                      onPressed: _show,
+                      child: Text(
+                        '$time',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                /* CustomIconBtn(
+                  color: Theme.of(context).backgroundColor,
+                  onPressed: () {
+                    authController.axisCount.value =
+                        authController.axisCount.value == 2 ? 4 : 2;
+                  },
+                  icon: Icon(authController.axisCount.value == 2
+                      ? Icons.list
+                      : Icons.grid_on),
+                ), */
+                /* GetX<NoteController>(
+                    init: Get.put<NoteController>(NoteController()),
+                    builder: (NoteController noteController) {
+                      if (noteController != null &&
+                          noteController.notes != null) {
+                        return NoteList();
+                      } else {
+                        return Text("No notes, create some ");
+                      }
+                    }), */
+              ],
+            ),
           ),
         ),
       ),
@@ -236,7 +212,7 @@ class _ShowNoteState extends State<ShowNote> {
         FloatingActionButton(
           tooltip: "Add Note",
           onPressed: () {
-            Get.to(() => AddProject());
+            Get.to(() => AddNote());
           },
           backgroundColor: Colors.blue,
           child: Icon(
@@ -272,7 +248,7 @@ void showDeleteDialog(BuildContext context, noteData) {
             ),
             onPressed: () {
               Get.back();
-              Database().delete(authController.user.uid, noteData.id);
+              Database().deleteNote(authController.user.uid, noteData.id);
               Get.back(closeOverlays: true);
             },
           ),

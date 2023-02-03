@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_note/controllers/authController.dart';
+import 'package:flutter_note/screens/auth/login.dart';
 import 'package:flutter_note/screens/settings/account.dart';
 import 'package:flutter_note/screens/settings/dark_mode.dart';
 import 'package:get/get.dart';
@@ -89,8 +90,8 @@ void showSignOutDialog(BuildContext context) async {
                 )),
             onPressed: () {
               Get.back();
-              authController.signout();
               Get.close(2);
+              authController.signout();
             },
             style: ElevatedButton.styleFrom(
               primary: Colors.blue,

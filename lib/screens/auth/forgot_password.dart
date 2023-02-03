@@ -38,6 +38,22 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      Text(
+                        "Forgot PassWord",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  /* Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
                       SvgPicture.asset(
                         'assets/icons/trello_bg_bl.svg',
                         height: MediaQuery.of(context).size.height * 0.05,
@@ -54,7 +70,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         ),
                       ),
                     ],
-                  ),
+                  ), */
                   const Text(
                     "Please enter your email and we will send \nyou a link to return to your account",
                     textAlign: TextAlign.center,
@@ -136,7 +152,6 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   SizedBox(
                     height: 30,
                   ),
-                  
                 ],
               ),
             ),

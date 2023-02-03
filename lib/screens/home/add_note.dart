@@ -7,12 +7,12 @@ import 'package:flutter_note/services/database.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-class AddProject extends StatefulWidget {
+class AddNote extends StatefulWidget {
   @override
-  State<AddProject> createState() => _AddProjectState();
+  State<AddNote> createState() => _AddNoteState();
 }
 
-class _AddProjectState extends State<AddProject> {
+class _AddNoteState extends State<AddNote> {
   final UserController userController = Get.find<UserController>();
 
   final AuthController authController = Get.find<AuthController>();
@@ -39,7 +39,7 @@ class _AddProjectState extends State<AddProject> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(
-          "Add project",
+          "Add note",
           style: TextStyle(
             fontSize: 24,
           ),
@@ -55,43 +55,41 @@ class _AddProjectState extends State<AddProject> {
             SizedBox(
               height: 20,
             ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    TextFormField(
-                      cursorColor: Colors.black,
-                      maxLines: null,
-                      autofocus: true,
-                      controller: titleController,
-                      keyboardType: TextInputType.multiline,
-                      textCapitalization: TextCapitalization.sentences,
-                      decoration: InputDecoration.collapsed(
-                        hintText: "Title",
-                      ),
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.w500,
-                      ),
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  TextFormField(
+                    cursorColor: Colors.black,
+                    maxLines: null,
+                    autofocus: true,
+                    controller: titleController,
+                    keyboardType: TextInputType.multiline,
+                    textCapitalization: TextCapitalization.sentences,
+                    decoration: InputDecoration.collapsed(
+                      hintText: "Title",
                     ),
-                    SizedBox(
-                      height: 20,
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w500,
                     ),
-                    TextFormField(
-                      cursorColor: Colors.black,
-                      controller: bodyController,
-                      keyboardType: TextInputType.multiline,
-                      maxLines: null,
-                      textCapitalization: TextCapitalization.sentences,
-                      decoration: InputDecoration.collapsed(
-                        hintText: "Type something...",
-                      ),
-                      style: TextStyle(
-                        fontSize: 20.0,
-                      ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    cursorColor: Colors.black,
+                    controller: bodyController,
+                    keyboardType: TextInputType.multiline,
+                    maxLines: null,
+                    textCapitalization: TextCapitalization.sentences,
+                    decoration: InputDecoration.collapsed(
+                      hintText: "Type something...",
                     ),
-                  ],
-                ),
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ],
               ),
             ),
           ]),
@@ -109,7 +107,7 @@ class _AddProjectState extends State<AddProject> {
           }
         },
         label: Text(
-          "Add Project",
+          "Add Note",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.blue,

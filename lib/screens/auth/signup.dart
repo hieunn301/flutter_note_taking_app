@@ -6,12 +6,23 @@ import 'package:flutter_note/screens/auth/social_card.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
-class SignUp extends StatelessWidget {
+class SignUp extends StatefulWidget {
   static String routeName = "/sign_up";
-  final _formKey = GlobalKey<FormState>();
-  final AuthController authController = Get.find<AuthController>();
-  final UserController userController = Get.find<UserController>();
 
+  @override
+  State<SignUp> createState() => _SignUpState();
+}
+
+class _SignUpState extends State<SignUp> {
+  final _formKey = GlobalKey<FormState>();
+
+  final AuthController authController = Get.find<AuthController>();
+  // final AuthController reauthController = Get.find<AuthController>();
+
+  final UserController userController = Get.find<UserController>();
+/*   String email;
+  String password;
+  String confirm_password; */
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -148,6 +159,37 @@ class SignUp extends StatelessWidget {
                             obscureText: true,
                             controller: authController.password,
                           ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          TextFormField(
+                            validator: (val) {
+                              if (val.isEmpty || val.length < 6) {
+                                return 'Please provide password of 5+ character ';
+                              } else if (val != authController.password.text) {
+                                return "Passsword doesn't match";
+                              }
+                              return null;
+                            },
+                            decoration: const InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 1, color: Colors.grey),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    width: 1, color: Colors.blueAccent),
+                              ),
+                              labelText: "Password",
+                              hintText: "Re-Enter your password",
+                              floatingLabelBehavior:
+                                  FloatingLabelBehavior.always,
+                              suffixIcon: CustomSurffixIcon(
+                                  svgIcon: "assets/icons/Lock.svg"),
+                            ),
+                            obscureText: true,
+                            controller: authController.repassword,
+                          ),
                         ],
                       ),
                     ),
@@ -185,6 +227,10 @@ class SignUp extends StatelessWidget {
                     onPressed: () {
                       if (_formKey.currentState.validate()) {
                         authController.createUser();
+                        final snackBar =
+                            SnackBar(content: Text('Sign Up Complete'));
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        return SnackBarThemeData();
                       }
                     },
                   ),

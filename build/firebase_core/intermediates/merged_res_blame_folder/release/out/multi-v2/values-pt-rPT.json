@@ -1,0 +1,82 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_core\\intermediates\\res\\merged\\release\\values-pt-rPT\\values-pt-rPT.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "200",
+                        "endColumns": "100",
+                        "endOffsets": "296"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\421ba40bc38c72041240c675c9122e63\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-pt-rPT\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "140",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "144",
+                        "endOffsets": "195"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\ETC\\ETC-Flutter\\learn_flutter\\github\\flutter_note_taking_app\\build\\firebase_core\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\3d7cc0f02857dd28693ed8bf2461120a\\transformed\\core-1.6.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "200",
+                        "endColumns": "100",
+                        "endOffsets": "296"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hieunn1\\.gradle\\caches\\transforms-3\\421ba40bc38c72041240c675c9122e63\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-pt-rPT\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "199",
+                        "endColumns": "140",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "144",
+                        "endOffsets": "195"
+                    }
+                }
+            ]
+        }
+    ]
+}

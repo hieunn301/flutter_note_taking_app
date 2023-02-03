@@ -200,6 +200,12 @@ class _LoginState extends State<Login> {
                     onPressed: () {
                       if (_formKey.currentState.validate()) {
                         authController.login();
+                        final snackBar =
+                            SnackBar(content: Text('Sign In Complete'));
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        return SnackBarThemeData(
+                          backgroundColor: Colors.blue,
+                        );
                       }
                     },
                   ),

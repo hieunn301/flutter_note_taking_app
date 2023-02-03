@@ -4,6 +4,7 @@ class UserModel {
   String id;
   String name;
   String email;
+  String imageUser;
 
   UserModel({this.id, this.name, this.email});
 
@@ -11,5 +12,6 @@ class UserModel {
     id = doc["id"];
     name = doc["name"];
     email = doc["email"];
+    imageUser = doc["imageUser"];
   }
 }
